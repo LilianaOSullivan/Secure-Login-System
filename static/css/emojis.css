@@ -1,0 +1,6 @@
+.form_outline {
+    /*
+        If the table got too large, the rounded corners did not look appealing
+    */
+    border-radius: 0%;
+}

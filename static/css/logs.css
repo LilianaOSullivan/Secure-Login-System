@@ -1,0 +1,57 @@
+.form_outline {
+    width:70%;
+}
+
+#logs_table {
+    border-collapse: collapse;
+}
+
+#logs_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+    text-align: center;
+    border-bottom: 5px solid #E5E5E5F2;
+    letter-spacing: .3px;
+}
+
+.form_outline {
+    /*
+        If the table got too large, the rounded corners did not look appealing
+    */
+    border-radius: 0%;
+}
+
+.asc::after {
+    position: relative;
+    left: 10px;
+    color:rgba(109, 109, 109, 0.5);
+    content:"▼";
+}
+
+.desc::after {
+    position: relative;
+    left: 10px;
+    color:rgba(109, 109, 109, 0.5);
+    content:"▲";
+}
+
+#logs_table td {
+    padding: 2px;
+}
+
+#logs_table tr {
+    padding: 2px;
+    transition: all .3s;
+}
+
+#logs_table tbody tr:hover{
+    transform: scale(1.05);
+    backface-visibility: hidden;
+    background-color: #ddd !important;
+}
+
+#logs_table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+

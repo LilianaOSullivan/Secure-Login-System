@@ -1,0 +1,52 @@
+.hr_invalid {
+    border: 1px solid #ff2d4b;
+}
+
+.hr_valid {
+    border: 1px solid #47e226;
+}
+
+.password_div_invalid {
+    background-color: #f8c4c0; 
+    border-left: 4px solid #ff2d4b;
+    border-right: 4px solid #ff2d4b;
+    width:292px;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.password_div_valid {
+    background-color: #d4edda;
+    border-left: 4px solid #47e226;
+    border-right: 4px solid #47e226;
+    width:292px;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.password_div_valid::after {
+    content: "👍";
+    font-size: 3em;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
